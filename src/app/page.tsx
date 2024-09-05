@@ -1,5 +1,5 @@
 //import ObjectRender, { age, alive, sname } from "./components/ObjectRender";
-import Quiz1 from "./components/Quiz1";
+import {Quiz1} from "./components/Quiz1";
 import Quiz2 from "./components/Quiz2";
 import Quiz3 from "./components/Quiz3";
 import Quiz4 from "./components/Quiz4";
@@ -17,4 +17,5 @@ const App = () => {
     </div>;
 };
 
-export default  App;
+export default  App
+
