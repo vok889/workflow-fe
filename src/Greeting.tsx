@@ -10,7 +10,9 @@ type greetingParams = {
       result.name = name;
       result.age = age;
       console.table(result)
-    } else{
+    } else if (format == "Default" ){
+      console.log("Hi, " + name)
+    } else if (format == null ){
       console.log("Hi, " + name)
     } 
   }
