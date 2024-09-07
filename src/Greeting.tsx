@@ -1,10 +1,10 @@
-type greeting = {
+type greetingParams = {
     name: string;
     age: number;
-    format: 'Table' | 'Default';
+    format?: 'Table' | 'Default';
   }
   
-  function greeting({name, age, format}: greeting) {
+  function greeting({name, age, format}: greetingParams) {
     if (format == "Table" ){
       const result = {};
       result.name = name;
