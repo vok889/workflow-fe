@@ -9,7 +9,7 @@ type greeting = {
       const result = {};
       result.name = name;
       result.age = age;
-      console.table(result )
+      console.table(result)
     } else{
       console.log("Hi, " + name)
     } 
