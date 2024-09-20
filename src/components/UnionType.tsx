@@ -21,4 +21,19 @@ function Label({ color }: { color: Color }) {
     return <p color={color}>Label</p>;
     
 }
+
+function greeting(name: string) {
+    console.log("Hi, " + name.toLowerCase())
+}
+greeting("Alice")
+
+function getName(): string {
+    return "Alice"
+}
+console.log(getName())
+const getName2 = (): string => {
+    return "Bob"
+}
+console.log(getName2())
+
 export default Demo
