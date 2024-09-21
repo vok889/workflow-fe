@@ -30,6 +30,7 @@ function Home() {
     price: 0,
     quantity: 1,
     status: "APPROVED",
+    owner: "",
   });
 
   const updateField = (event: ChangeEvent<HTMLInputElement>) => {
@@ -51,6 +52,7 @@ function Home() {
       price: newRequest.price,
       quantity: 1,
       status: "APPROVED",
+      owner: "me",
     });
   };
 
@@ -61,26 +63,6 @@ function Home() {
         <div className="mt-4">
           <BudgetPanel items={budgetRequests} />
         </div>
-        <form onSubmit={handleSubmit}>
-          <div>
-            Title:
-            <input
-              name="title"
-              value={newRequest.title}
-              onChange={updateField}
-            />
-          </div>
-          <div>
-            Amount:
-            <input
-              name="price"
-              type="number"
-              value={newRequest.price}
-              onChange={updateField}
-            />
-          </div>
-          <button>Add</button>
-        </form>
         <div className="mt-4">
           <BudgetRequestDataTable items={budgetRequests} />
         </div>
